@@ -10,6 +10,7 @@ let mines = []
 let cell = 10
 let moves = 0
 let minesAround = 1
+let numOfMines = 99
 
 ctx.strokeStyle = "black"
 ctx.globalAlpha = 1
@@ -103,7 +104,7 @@ function getClickCoords(e) {
 
   if (moves == 1) {
     mines.push({ x: xRound, y: yRound })
-    createRndMine(10)
+    createRndMine(numOfMines)
     mines.shift() //removes first element (dummy)
   }
   
