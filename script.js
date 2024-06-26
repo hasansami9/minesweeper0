@@ -10,7 +10,7 @@ let mines = []
 let cell = 10
 let moves = 0
 let minesAround = 1
-let numOfMines = 99
+let numOfMines = 10
 
 ctx.strokeStyle = "black"
 ctx.globalAlpha = 1
